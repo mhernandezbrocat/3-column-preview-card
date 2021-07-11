@@ -1,0 +1,123 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* (paragraphs) */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+p {
+    color: var(--Very-light-gray);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+
+p {
+    line-height: 2;
+    padding-bottom: 70px;
+}
+
+.container {
+    max-width: 900px;
+    height: 500px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.container1 {
+    background-color: var(--Bright-orange);
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.container2 {
+    background-color: var(--Dark-cyan);
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.container3 {
+    background-color: var(--Very-dark-cyan);
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.icono {
+    padding-bottom: 30px;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 20px;
+    list-style: none;
+    border: 2px solid white;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+
+.boton-container1 {
+    color: var(--Bright-orange);
+}
+.boton-container2 {
+    color: var(--Dark-cyan);
+}
+.boton-container1 {
+    color: var(--Very-dark-cyan);
+}
+.boton-container1:hover {
+    background-color: var(--Bright-orange);
+    color: white;
+}
+.boton-container2:hover {
+    background-color: var(--Dark-cyan);
+    color: white;
+}
+.boton-container3:hover {
+    background-color: var(--Very-dark-cyan);
+    color: white;
+}
+
+
+@media (max-width:938px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    p {
+        padding-bottom: 20px;
+    }
+    body {
+        height: auto;
+    }
+} 
